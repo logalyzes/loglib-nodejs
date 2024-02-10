@@ -1,6 +1,6 @@
 {
   "name": "logalayze-logger",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Logging library for Logalayze central log management system",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
