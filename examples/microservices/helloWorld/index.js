@@ -3,6 +3,8 @@ const { Logger } = require("logalayze-logger");
 
 const app = express();
 
+const logger = new Logger("0.0.0.0:8080");
+
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
