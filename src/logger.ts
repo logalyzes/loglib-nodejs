@@ -17,7 +17,7 @@ export class Logger extends Console {
   private healthService: HealthService;
   private logQueue: LogsMessages_LogForCreate[] = [];
 
-  private constructor(serverAddress: string) {
+  public constructor(serverAddress: string) {
     super(process.stdout, process.stderr);
     this.logQueue = [];
     this.logService = new LogCollectorService(serverAddress);
