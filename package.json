@@ -1,5 +1,5 @@
 {
-  "name": "nodejs",
+  "name": "logalayze-logger",
   "version": "1.0.0",
   "description": "Logging library for Logalayze central log management system",
   "main": "dist/index.js",
@@ -20,9 +20,6 @@
   ],
   "author": "Samet Haymana",
   "license": "ISC",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "devDependencies": {
     "typescript": "^5.3.3"
   },
