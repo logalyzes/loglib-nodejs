@@ -18,6 +18,9 @@
     "microservice logging",
     "central log management"
   ],
+  "files": [
+    "dist"
+  ],
   "author": "Samet Haymana",
   "license": "ISC",
   "devDependencies": {
