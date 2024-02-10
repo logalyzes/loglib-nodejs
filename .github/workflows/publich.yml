@@ -30,14 +30,16 @@ jobs:
         with:
           node-version: "18"
           registry-url: "https://registry.npmjs.org/"
-      - run: npm ci
-      - name: Bump package version
+
+      - name: Bump minor version and tag
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          npm version minor -m "chore(release): bump version to %s"
-          git push --follow-tags
+          npm version minor -m "chore(release): bump minor version to %s"
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
       - name: Publish to npm
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
